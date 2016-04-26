@@ -97,7 +97,7 @@ module Bullet
     end
 
     def mongoid5x?
-      mongoid? && ::Mongoid::VERSION =~ /\A5/
+      mongoid? && (::Mongoid::VERSION =~ /\A5/ || ::Mongoid::VERSION =~ /\A6/) 
     end
   end
 end
